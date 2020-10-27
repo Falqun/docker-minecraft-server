@@ -134,7 +134,7 @@ if [[ $startScriptCount = 0 ]]; then
   unzip -o "${srv_modpack}" -d ${FTB_BASE_DIR} | awk '{printf "."} END {print ""}'
 fi
 
-log "1 Script is: $(find ${FTB_BASE_DIR} $entryScriptExpr "
+log "1 Script is: $(find ${FTB_BASE_DIR} $entryScriptExpr"
 if [[ $(find ${FTB_BASE_DIR} $entryScriptExpr | wc -l) = 0 ]]; then
 
     # Allow up to 2 levels since some modpacks have a top-level directory named
